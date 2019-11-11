@@ -69,38 +69,37 @@
   >>description属性：target功能简单描述，可以理解为注释
 
   利用ant编译helloworld.java文件,build.xml文件内容如下：
-  >> ```c
-  >> //build.xml
-  >> <project name="helloworld" default="run" basedir=".">
-  >> // <!--设定变量，之后用。location为文件夹路径-->
-	>> <property name="src" value="src"/>
-	>> <property name="class" value="class"/>
-  >>  //<!--初始化命令-->     
-  >>     <target name = "init">
-	>>  <mkdir dir="${class}"/>
-	>> </target>
-	>>
-	>> <path id="classpath">
-	>>  <pathelement path = "${class}"/>
-	>> </path>
-	>>//编译
-	>> <target name="compile" depends="init">
-  >> //javac标签用来设置编译程序的参数，srcdir为java文件路 径，destdir为编译后class文件的保存路径
-	 >> <javac srcdir="${src}" destdir="${class}" >
-	 >> </javac>
-	>> </target>
-	>>//运行java.class
-	>> <target name="run" depends="compile">
-	>>  <java classname="com.ex1.HelloWorld">
-	 >>   <classpath refid ="classpath"></classpath>
-	 >> </java>
- >>	</target>
- >>//设定删除命令要删地路径
-	>> <target name = "clean">
-  >>	  <delete dir="${class}"/>
-	>> </target>
-  >> ```
-
+   ~~~c
+   //build.xml
+   <project name="helloworld" default="run" basedir=".">
+   // <!--设定变量，之后用。location为文件夹路径-->
+	 <property name="src" value="src"/>
+	 <property name="class" value="class"/>
+    //<!--初始化命令-->     
+       <target name = "init">
+	 <mkdir dir="${class}"/>
+	 </target>
+	
+	 <path id="classpath">
+	  <pathelement path = "${class}"/>
+	 </path>
+	//编译
+	 <target name="compile" depends="init">
+  //javac标签用来设置编译程序的参数，srcdir为java文件路 径，destdir为编译后class文件的保存路径
+	  <javac srcdir="${src}" destdir="${class}" >
+	  </javac>
+	 </target>
+	//运行java.class
+	 <target name="run" depends="compile">
+	  <java classname="com.ex1.HelloWorld">
+	    <classpath refid ="classpath"></classpath>
+	  </java>
+ 	</target>
+ //设定删除命令要删地路径
+	 <target name = "clean">
+  	  <delete dir="${class}"/>
+	 </target>
+ ~~~
 运行结果：
 ![](3.png)
 
