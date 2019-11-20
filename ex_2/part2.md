@@ -1,4 +1,4 @@
-~## Set 2 The source code for the BoxBug class can be found in the boxBug directory.
+## Set 2 The source code for the BoxBug class can be found in the boxBug directory.
 ### 1. What is the role of the instance variable sideLength?
 the max num of grid the bug can walk straight,when step equals sideLength,the bug will adjust to his direction.
 ~~~java
