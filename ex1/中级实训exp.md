@@ -10,7 +10,7 @@
   
    2）vi的工作模式<br>
    3种工作模式：普通模式、编辑模式和命令模式,相互之间可以切换
-   ![模式切换图](1.jpg)
+   ![模式切换图](pic/1.jpg)
    常用相关命令：<br>
    >退出：
    >>:wq    文件保存退出<br>
@@ -36,9 +36,9 @@
 >>u ——撤销上一次操作
 ## 熟悉JDK的环境并学习JAVA语言，完成HelloWorld的编译运行
 由于JDK环境已经配置好，直接进行编译运行java程序，程序与步骤如下：
-![hello world程序](1.png)
+![hello world程序](pic/1.png)
 实验步骤及结果
-![](2.png)
+![](pic/2.png)
 * java学习<br>
 >>基本语法：<br>
 大小写敏感：Java 是大小写敏感的，这就意味着标识符 Hello 与   hello 是不同的。<br>
@@ -118,7 +118,7 @@
 ~~~
   
 运行结果：
-![](3.PNG)
+![](pic/3.PNG)
 
 ## 学习Junit，利用Ant、Junit测试通过HelloWorld
 * Junit的认知：<br>
@@ -168,7 +168,7 @@
 
   * 操作：<br>
   将下载好的junit的jar包放在程序文件的根目录下：(我是放在lib文件里面,src放两个java文件，class是编译生成的)
-  ![](4.PNG)
+  ![](pic/4.PNG)
   然后修改build.xml，以便利用ant编译运行junit：
   ~~~java
   //<!--项目名称，以及默认执行target>
@@ -208,5 +208,5 @@
   ~~~
 
 cd 进入含有build.xml的目录，使用ant命令执行：
-![](5.PNG)
+![](pic/5.PNG)
 
