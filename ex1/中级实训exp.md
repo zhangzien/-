@@ -10,7 +10,7 @@
   
    2）vi的工作模式<br>
    3种工作模式：普通模式、编辑模式和命令模式,相互之间可以切换
-   ![模式切换图](pic/1.jpg)
+   ![模式切换图](pic/1.jpg)    <br>
    常用相关命令：<br>
    >退出：
    >>:wq    文件保存退出<br>
@@ -36,7 +36,7 @@
 >>u ——撤销上一次操作
 ## 熟悉JDK的环境并学习JAVA语言，完成HelloWorld的编译运行
 由于JDK环境已经配置好，直接进行编译运行java程序，程序与步骤如下：
-![hello world程序](pic/1.png)
+![hello world程序](pic/1.png)   <br>
 实验步骤及结果
 ![](pic/2.png)
 * java学习<br>
@@ -207,6 +207,6 @@
 </project>
   ~~~
 
-cd 进入含有build.xml的目录，使用ant命令执行：
+cd 进入含有build.xml的目录，使用ant命令执行：<br>
 ![](pic/5.PNG)
 
